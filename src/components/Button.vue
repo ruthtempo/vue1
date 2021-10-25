@@ -16,6 +16,7 @@ export default {
 
 button{
     width:25%;
+    margin-top:15px;
     margin-left:10px;
     height:50px;
     background-color:orchid;

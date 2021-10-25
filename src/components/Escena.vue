@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li :class="{selected : index == activeSentence}" v-for="(e, index) in escenes" :key="index" >{{e}}</li>
+            <li :class="{selected : index == activeSentence}" v-for="(e, index) in escenes" :key="index" >{{e.text}}</li>
         </ul>
     </div>
 </template>
@@ -29,6 +29,7 @@ export default {
         padding:15px;
         margin:25px;
         list-style: none;
+        opacity:0.95;
     }
 
     .selected{

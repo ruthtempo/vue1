@@ -27,6 +27,7 @@ export default {
 #welcome-page{
     background-color: powderblue;
     padding:3rem;
+    height:70vh;
 
 }
 

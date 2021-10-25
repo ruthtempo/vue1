@@ -25,8 +25,5 @@ export default {
   margin-top: 30px;
 }
 
-.container{
-  height:100vh;
 
-}
 </style>

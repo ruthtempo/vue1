@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="home" :style="{ backgroundImage: `url(${myLocalEscenes[currentSentence].img})`  }">
         <div v-if="!hasClicked">
             <Welcome @start="hasClicked = true"/>
         </div>
@@ -24,10 +24,10 @@ export default {
     data(){
         return{
             myLocalEscenes :[
-                {text: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial", img:""},
-                {text: "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.", img:""},
-                {text: "L'heroi va decidir travessar la porta que el portava a casa", img:require("../assets/1.jpg")},
-                {text: "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ...", img:""},
+                {text: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial", img:require("../assets/1.jpg")},
+                {text: "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.", img:require("../assets/2.jpg")},
+                {text: "L'heroi va decidir travessar la porta que el portava a casa", img:require("../assets/3.jpg")},
+                {text: "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ...", img:require("../assets/4.jpg")},
             ],
             currentSentence : 0,
             hasClicked: false,
@@ -51,3 +51,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+    #home{
+        height:80vh;
+    }
+</style>
